@@ -16,9 +16,8 @@ i {
   color: #fff;
 }
 .navbar-mainbg {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 36%, rgba(114,191,213,1) 100%);
-  padding: 0px;
+    background-color:#5161ce;
+    padding: 0px;
 }
 #navbarSupportedContent {
   overflow: hidden;
@@ -75,9 +74,7 @@ i {
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   background-color: #fff;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  margin-top: 10px;
+  border-radius: 15px;
 }
 .hori-selector .right,
 .hori-selector .left {
@@ -113,6 +110,7 @@ i {
   bottom: 0;
   left: -25px;
 }
+
 
 @media (min-width: 992px) {
   .navbar-expand-custom {
@@ -166,4 +164,8 @@ i {
     bottom: -25px;
     left: -25px;
   }
+}
+
+.temp{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 36%, rgba(114,191,213,1) 100%);
 }
