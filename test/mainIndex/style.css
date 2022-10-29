@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
 body {
   font-family: "Roboto", sans-serif;
@@ -111,7 +112,6 @@ i {
   left: -25px;
 }
 
-
 @media (min-width: 992px) {
   .navbar-expand-custom {
     -ms-flex-flow: row nowrap;
@@ -169,7 +169,13 @@ i {
 #logo{
   width: 30%;
 }
-
+.title{
+  position: relative;
+  top:-25vh;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 10vw;
+}
 .mainContainer{
   display: flex;
   flex-direction: row;
@@ -183,7 +189,155 @@ i {
   align-items: center;
 }
 #map{
+  position: relative;
+  top:-25vh;
+  border-radius: 20px;
+  border: none;
+  width: 80vw;
+  height: 81vh;
+}
+.line{
+  top:-10vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+hr{
+width: 80vw;
+height: 1vh;
+border-radius: 10px;
+background: rgb(154,19,199);
+background: linear-gradient(90deg, rgba(154,19,199,1) 0%, rgba(9,121,114,1) 47%, rgba(114,191,213,1) 100%);
+}
+.cardBox{
+  max-width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.events{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  margin-top:5vw;
+  position: relative;
+  width: 350px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 25px black;
+  transition: .5s;
+}
+
+.card:hover{
+  height: 450px;
+}
+
+.imgBx {
   position: absolute;
-  width: 60vw;
-  height: 40vw;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 15px 50px black;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.card:hover.imgBx{
+  width: 250px;
+  height: 250px;
+  transition: 0.5s;
+
+}
+.imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+
+}
+
+.card .content .details{
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  transition: .5px;
+  transform: translateY(130px);
+
+}
+.card:hover .content .details{
+  transform: translateY(0);
+  transition: 0.5s;
+}
+
+.card .content .details h2{
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.2em;
+
+}
+.card .content .details h2 span{
+  font-size: 0.75em;
+  font-weight: 500;
+  opacity: .5;
+}
+.card .content .details .data{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+
+}
+.card .content .details .data h3{
+  font-size: 1em;
+  color: #555;
+  line-height: 1.2em;
+  font-weight: 600;
+
+}
+.card .content .details .data h3 span{
+  font-size: 0.85em;
+  font-weight: 400;
+  opacity: .5;
+}
+
+.card .content .details .actionBtn{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .content .details .actionBtn button{
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-weight: 500;
+  background: #ff5f96;
+  color: #fff;
+  cursor: pointer;
+}
+.card .content .details .actionBtn button:nth-child(2){
+  border: 1px solid #999;
+  color: #999;
+  background: #fff;
 }
