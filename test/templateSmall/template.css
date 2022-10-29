@@ -25,10 +25,11 @@ body {
 
 .card:hover{
     height: 450px;
+    transition: 0.5s;
 
 }
 
-.imgBx {
+.imgBox {
     position: absolute;
     left: 50%;
     top: -50px;
@@ -45,9 +46,10 @@ body {
 .card:hover.imgBx{
     width: 250px;
     height: 250px;
+    transition: 0.5s;
 
 }
-.imgBx img{
+.imgBox img{
     position: absolute;
     top: 0;
     left: 0;
@@ -76,7 +78,7 @@ body {
 }
 .card:hover .content .details{
     transform: translateY(0);
-
+    transition: 0.5s;
 }
 
 .card .content .details h2{
