@@ -165,3 +165,11 @@ i {
     left: -25px;
   }
 }
+.mapouter{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.gmap_canvas{
+  position: absolute;
+}
