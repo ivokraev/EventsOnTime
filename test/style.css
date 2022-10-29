@@ -170,10 +170,21 @@ i {
   width: 30%;
 }
 
-
 .mainContainer{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
+
+.gmap_canvas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#map{
+  position: absolute;
+  width: 60vw;
+  height: 40vw;
+}
+
