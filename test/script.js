@@ -60,6 +60,7 @@ function test() {
     target.parent().addClass("active");
   });
   
+  
   // Add active class on another page linked
   // ==========================================
   // $(window).on('load',function () {
@@ -77,4 +78,6 @@ function test() {
   //         }
   //     })
   // });
+
+  
   
