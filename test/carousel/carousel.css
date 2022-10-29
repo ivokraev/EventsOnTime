@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  i {
+    margin-right: 10px;
+  }
+  /*----------bootstrap-navbar-css------------*/
+  .navbar-logo {
+    padding: 15px;
+    color: #fff;
+  }
+  .navbar-mainbg {
+      background-color:#5161ce;
+      padding: 0px;
+  }
+  #navbarSupportedContent {
+    overflow: hidden;
+    position: relative;
+  }
+  #navbarSupportedContent ul {
+    padding: 0px;
+    margin: 0px;
+  }
+  #navbarSupportedContent ul li a i {
+    margin-right: 10px;
+  }
+  #navbarSupportedContent li {
+    list-style-type: none;
+    float: left;
+  }
+  #navbarSupportedContent ul li a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 20px 20px;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+  }
+  #navbarSupportedContent > ul > li.active > a {
+    color: #5161ce;
+    background-color: transparent;
+    transition: all 0.7s;
+  }
+  #navbarSupportedContent a:not(:only-child):after {
+    content: "\f105";
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 14px;
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    transition: 0.5s;
+  }
+  #navbarSupportedContent .active > a:not(:only-child):after {
+    transform: rotate(90deg);
+  }
+  .hori-selector {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background-color: #fff;
+    border-radius: 15px;
+  }
+  .hori-selector .right,
+  .hori-selector .left {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    bottom: 10px;
+  }
+  .hori-selector .right {
+    right: -25px;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+  .hori-selector .left {
+    left: -25px;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+  .hori-selector .right:before,
+  .hori-selector .left:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+  
+  }
+  .hori-selector .right:before {
+    bottom: 0;
+    right: -25px;
+  }
+  .hori-selector .left:before {
+    bottom: 0;
+    left: -25px;
+  }
+  
+  
+  @media (min-width: 992px) {
+    .navbar-expand-custom {
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+    }
+    .navbar-expand-custom .navbar-nav {
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+    .navbar-expand-custom .navbar-toggler {
+      display: none;
+    }
+    .navbar-expand-custom .navbar-collapse {
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    #navbarSupportedContent ul li a {
+      padding: 12px 30px;
+    }
+    .hori-selector {
+      margin-top: 0px;
+      margin-left: 10px;
+      border-radius: 0;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+    }
+    .hori-selector .left,
+    .hori-selector .right {
+      right: 10px;
+    }
+    .hori-selector .left {
+      top: -25px;
+      left: auto;
+    }
+    .hori-selector .right {
+      bottom: -25px;
+    }
+    .hori-selector .left:before {
+      left: -25px;
+      top: -25px;
+    }
+    .hori-selector .right:before {
+      bottom: -25px;
+      left: -25px;
+    }
+  }
+  .panels {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .panel {
+    height: 38.7vh;
+    background: #5161ce;
+    box-shadow: inset 0 0 0 5px #5161ce;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    /* Safari transitionend event.propertyName === flex */
+    /* Chrome + FF transitionend event.propertyName === flex-grow */
+    transition:
+      font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+      flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+      background 0.2s;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .panel1 { background-image:url(/img/1.png); }
+  .panel2 { background-image:url(/img/2.png); }
+  .panel3 { background-image:url(/img/3.png); }
+  .panel4 { background-image:url(/img/4.png); }
+  .panel5 { background-image:url(/img/5.png); }
+  .panel6 { background-image:url(/img/6.png); }
+  .panel7 { background-image:url(/img/7.png); }
+  .panel8 { background-image:url(/img/8.png); }
+  .panel9 { background-image:url(/img/9.png); }
+  .panel10 { background-image:url(/img/10.png); }
+
+
+  /* Flex Items */
+  .panel > * {
+    margin: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .panel > *:first-child { transform: translateY(-100%); }
+  .panel.open-active > *:first-child { transform: translateY(0); }
+  .panel > *:last-child { transform: translateY(100%); }
+  .panel.open-active > *:last-child { transform: translateY(0); }
+
+  .panel.open {
+    flex: 5;
+    font-size: 40px;
+  }
+  
+.carousel1{
+    display: flex;
+    flex-direction: row;
+text-align: center;
+}
+.carousel2{
+    display: flex;
+    flex-direction: row;
+text-align: center;
+}
+.text--gradiant {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 36%, rgba(114,191,213,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.title{
+    font-family: 'Neucha', cursive;
+}
+
+  @media only screen and (max-width: 600px) {
+    .panel p {
+      font-size: 1em;
+    }
+  }
