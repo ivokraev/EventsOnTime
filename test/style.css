@@ -173,3 +173,8 @@ i {
 .gmap_canvas{
   position: absolute;
 }
+#gmap_canvas{
+  height: 45vw;
+  width: 50vw;
+  border-radius: 72% 28% 69% 31% / 35% 71% 29% 65%   ;
+}
