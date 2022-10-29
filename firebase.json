@@ -6,7 +6,7 @@
     "public": "test",
     "ignore": [
       "firebase.json",
-      "**/.ts",
+      "**/.*",
       "**/node_modules/**"
     ]
   }

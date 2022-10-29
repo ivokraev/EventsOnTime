@@ -16,3 +16,14 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 const analytics = getAnalytics(app);
+
+// function writeUserData(events: JSON) {
+//     const db = getDatabase();
+//     set(ref(db), {
+//       events: events
+//     });
+// }
+
+// fetch('../events.json')
+//     .then((response) => response.json())
+//     .then((json) => console.log(json));
