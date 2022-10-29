@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 html {
-    box-sizing: border-box; 
-    font-family: 'helvetica neue';
+    box-sizing: border-box;
     font-size: 20px;
     font-weight: 200;
   }
@@ -172,6 +172,7 @@ html {
     }
   }
   .panels {
+    height: fit-content;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -180,6 +181,7 @@ html {
   }
 
   .panel {
+    height: 37.5vh;
     background: #6B0F9C;
     box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
     color: white;
@@ -191,8 +193,6 @@ html {
       font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
       flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
       background 0.2s;
-    font-size: 20px;
-    background-size: cover;
     background-position: center;
     flex: 1;
     justify-content: center;
@@ -254,8 +254,16 @@ text-align: center;
     flex-direction: row;
 text-align: center;
 }
-
-
+.text--gradiant {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 36%, rgba(114,191,213,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.title{
+    font-family: 'Neucha', cursive;
+}
 
   @media only screen and (max-width: 600px) {
     .panel p {
