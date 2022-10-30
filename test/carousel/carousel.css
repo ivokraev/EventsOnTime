@@ -201,16 +201,16 @@ html {
     flex-direction: column;
   }
 
-  .panel1 { background-image:url(/img/1.png); }
-  .panel2 { background-image:url(/img/2.png); }
-  .panel3 { background-image:url(/img/3.png); }
-  .panel4 { background-image:url(/img/4.png); }
-  .panel5 { background-image:url(/img/5.png); }
-  .panel6 { background-image:url(/img/6.png); }
-  .panel7 { background-image:url(/img/7.png); }
-  .panel8 { background-image:url(/img/8.png); }
-  .panel9 { background-image:url(/img/9.png); }
-  .panel10 { background-image:url(/img/10.png); }
+  .panel1 { background-image:url(../../img/1.png); }
+  .panel2 { background-image:url(../../img/2.png); }
+  .panel3 { background-image:url(../../img/3.png); }
+  .panel4 { background-image:url(../../img/4.png); }
+  .panel5 { background-image:url(../../img/5.png); }
+  .panel6 { background-image:url(../../img/6.png); }
+  .panel7 { background-image:url(../../img/7.png); }
+  .panel8 { background-image:url(../../img/8.png); }
+  .panel9 { background-image:url(../../img/9.png); }
+  .panel10 { background-image:url(../../img/10.png); }
 
 
   /* Flex Items */
