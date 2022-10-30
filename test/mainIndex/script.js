@@ -71,25 +71,28 @@ function test() {
 
     function printEvents() {
       events.forEach(element => {
-        let currentCard = "".concat(card[0]);
-        currentCard = currentCard.concat(element.token);
-        currentCard = currentCard.concat(card[1]);
+        console.log(element.seasonTag);
+        if(element.seasonTag == "winter"){
+          let currentCard = "".concat(card[0]);
+          currentCard = currentCard.concat(element.token);
+          currentCard = currentCard.concat(card[1]);
+  
+  
+          currentCard = currentCard.concat(element.imgURL);
+          currentCard = currentCard.concat(card[2]);
+          currentCard = currentCard.concat(element.eventName);
+  
+          currentCard = currentCard.concat(card[3]);
+          currentCard = currentCard.concat(card[4]);
+          currentCard = currentCard.concat(card[5]);
+          currentCard = currentCard.concat(card[6]);
+          currentCard = currentCard.concat(card[7]);
+          currentCard = currentCard.concat(card[8]);
+          currentCard = currentCard.concat(card[9]);
+          cardBox.innerHTML+=currentCard;
+        }
 
 
-        currentCard = currentCard.concat(element.imgURL);
-        currentCard = currentCard.concat(card[2]);
-        currentCard = currentCard.concat(element.eventName);
-
-        currentCard = currentCard.concat(card[3]);
-        currentCard = currentCard.concat(card[4]);
-        currentCard = currentCard.concat(card[5]);
-        currentCard = currentCard.concat(card[6]);
-        currentCard = currentCard.concat(card[7]);
-        currentCard = currentCard.concat(card[8]);
-        currentCard = currentCard.concat(card[9]);
-
-
-        cardBox.innerHTML+=currentCard;
       });
 
     }
