@@ -72,7 +72,7 @@ function test() {
     function printEvents() {
       events.forEach(element => {
         console.log(element.seasonTag);
-        if(element.seasonTag == "winter"){
+        if(element.seasonTag == "autumn" || element.seasonTag == "autumn"){
           let currentCard = "".concat(card[0]);
           currentCard = currentCard.concat(element.token);
           currentCard = currentCard.concat(card[1]);
